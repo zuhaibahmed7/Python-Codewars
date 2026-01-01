@@ -1,0 +1,6 @@
+def accum(st):
+    result = []
+    for i, chr in enumerate(st):        # enumerate() does two things iterate and gives index and character
+        result.append(chr.upper()+chr.lower()*i)
+        
+    return "-".join(result)     # join method in string separate the list parts by -.
