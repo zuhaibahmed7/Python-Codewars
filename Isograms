@@ -1,0 +1,9 @@
+def is_isogram(string):
+    #your code here
+    string = string.lower()
+    
+    for chr in string:
+        if string.count(chr)>1:
+            return False
+    
+    return True
